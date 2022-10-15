@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@600&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Poppins:ital,wght@0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(17, 17, 17); */
+    background-color: rgb(97, 98, 98);
+}
+
+
+nav {
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li.lis:hover {
+    box-shadow: 0 0 20px 0px rgba(115, 114, 114, 0.875);
+    transition: 0.5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.brand img {
+    border-radius: 50%;
+    padding: 0px 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: lightgreen;
+}
+
+
+/* -------adding css in fav.html -------> */
+
+section {
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    background-color: #000013;
+    height: 230px;
+}
+
+.imageOverlay {
+    background-image: url('image.jpg');
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    opacity: 0.3;
+}
+
+section h2 {
+    position: absolute;
+    left: 26%;
+    font-size: 90%;
+    top: 18%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 2;
+
+}
+
+.box h1 {
+    font-size: 550%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    left: 7.5%;
+    margin-top: 68px;
+
+}
+
+.box img {
+    height: 80%;
+    width: 17%;
+    border-radius: 10px;
+    /* background-color: pink; */
+    position: relative;
+    left: 6%;
+    margin-top: 28px;
+
+}
+
+.box2 {
+    height: 450px;
+    color: white;
+    background: linear-gradient(to top, rgb(31, 31, 122), black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box2 img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.btn {
+    color: black;
+    margin-top: 70px;
+    border-radius: 25px;
+    padding: 16px;
+    font-weight: bold;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: red;
+    box-shadow: 0 0 20px 0px rgba(115, 114, 114, 0.875);
+}
+
+.para1 {
+    margin-bottom: 20px;
+    font-size: 190%;
+    font-weight: bold;
+}
+
+.para2 {
+    margin-top: 20px;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+
+/* -------- adding css in bottom ----------------> */
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    padding: 0px 48px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    padding: 0px 20px;
+}
+
+
+
+
+/* ------------- ADDING MEDIS TO HEADER -----------------> */
+
+
+@media screen and (max-width:410px) {
+
+    /* body{
+        background-color: yellow;
+    } */
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0px;
+    }
+
+
+    /* -------------- adding css to box ----------------> */
+
+
+    section h2 {
+        top: 28%;
+        left: 54%;
+    }
+
+    .box {
+        display: flex;
+        height: 200px;
+    }
+
+    .box img {
+        height: 125px;
+        width: auto;
+    }
+
+    .box h1 {
+        font-size: 230%;
+    }
+
+    .para1 {
+        font-size: 170%;
+    }
+
+
+
+    /* -------- adding CSS in bottom-------->     */
+
+    .bottom {
+        height: 140px;
+    }
+
+    .icons {
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .icons i {
+        padding: 0px 6px;
+    }
+
+    .songInfo {
+        margin-bottom: 20px;
+        left: -20px;
+    }
+
+    #myProgressBar {
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    .songInfo img {
+        border-radius: 50%;
+    }

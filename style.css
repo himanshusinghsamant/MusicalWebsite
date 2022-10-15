@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@600&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Poppins:ital,wght@0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    /* background-color: rgb(97, 98, 98); */
+}
+
+
+nav {
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+.lis a:hover{
+    color: aqua;
+    /* box-shadow: 0 0 20px 0px rgba(115, 114, 114, 0.875); */
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+
+
+
+.brand img {
+    border-radius: 50%;
+    padding: 0px 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: lightgreen;
+}
+
+.container {
+    height: 90vh;
+    background-color: gray;
+    color: black;
+    display: flex;
+    margin: 15px auto;
+    width: 70%;
+    border-radius: 10px;
+    background-image: url('img2.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.songList h1 {
+    margin: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.songItems {
+    display: flex;
+    border-radius: 15px;
+    height: 6.5vh;
+    width: 30vw;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bubblegum Sans', cursive;
+    margin: 5px 35px;
+    padding: 0px 15px;
+    font-weight: bold;
+    background: transparent;
+
+}
+
+.songItems:hover {
+    background-color: rgb(97, 96, 96);
+    transition: 1s;
+}
+
+.songItemsContainer {
+    margin: 25px 0px;
+}
+
+.songItems img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0px 23px;
+}
+
+.songList i {
+    cursor: pointer;
+}
+
+.timeStamp {
+    padding: 0px 10px;
+}
+
+.container-2 {
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.container-2 span h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    padding: 20px 0px 0px 67px;
+}
+
+.containerItems {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+
+}
+
+.block {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    height: 45vh;
+    width: 15vw;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.block:hover {
+    /* box-shadow: 0 0 20px 0px rgba(115, 114, 114, 0.875); */
+    background-color: rgb(60, 59, 59);
+    transition: 0.5s;
+}
+
+.block img {
+    width: 13vw;
+    height: 25vh;
+    object-fit: cover;
+    margin: 15px 0px;
+    margin-left: 14px;
+    border-radius: 10px;
+    /* padding: 0px 12px; */
+
+}
+
+.block span p {
+    padding: 0px 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.block #title {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    padding: 0px 48px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    padding: 0px 20px;
+}
+
+
+
+/* css for footer ------> */
+.footer {
+    display: flex;
+    color: white;
+    background-color: rgb(27, 26, 26);
+    justify-content: center;
+    height: 15vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+
+@media screen and (max-width:410px) {
+
+    /* body{
+        background-color: yellow;
+    } */
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0px;
+    }
+
+    /* ----------styling container----> */
+
+    .container {
+        justify-content: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .songItemsContainer {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .songItems {
+        display: flex;
+        width: 99%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .songListPlay {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .songItemPlay {
+        padding-left: 22px;
+    }
+
+    /* ------- adding CSS in .container-2------> */
+    .container-2 span h2 {
+        margin-bottom: 15px;
+    }
+
+    .container-2 {
+        padding: 20px 0px;
+    }
+
+    .containerItems {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .block {
+        width: 45%;
+        height: 49%;
+    }
+
+    .block img {
+        width: 80%;
+        height: 58%;
+        object-fit: cover;
+    }
+
+    .block span p {
+        font-size: 13px;
+    }
+
+    .block #title {
+        font-size: 17px;
+    }
+
+    /* ----------styling footer -------> */
+
+    #foot {
+        font-size: 15px;
+    }
+
+
+    /* -------- adding CSS in bottom-------->     */
+
+    .bottom {
+        height: 140px;
+    }
+
+    .icons {
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .icons i {
+        padding: 0px 6px;
+    }
+
+    .songInfo {
+        margin-bottom: 20px;
+        left: -20px;
+    }
+
+    #myProgressBar {
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    .songInfo img {
+        border-radius: 50%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
